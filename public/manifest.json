@@ -1,7 +1,7 @@
 {
     "short_name": "Le Hub.",
-    "name": "Le Hub. Concentré d'applications",
-    "description": "Voici un concentré des sites que j'ai développé.",
+    "name": "Le Hub. Concentré d'application",
+    "description": "Regroupement des sites et services que j'ai développé depuis plusieurs années.",
     "icons": [
         {
             "src": "/assets/img/favicon.ico",
