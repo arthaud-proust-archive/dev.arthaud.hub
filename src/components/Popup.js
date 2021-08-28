@@ -70,7 +70,7 @@ export default function Popup(props) {
             >
                 <div 
                     ref={popupRef} 
-                    className={`popup m-auto w-3/4 relative group flex flex-col text items-center justify-start`} 
+                    className={`popup m-auto w-3/4 md:w-1/3 lg:w-1/3 xl:w-1/4 relative group flex flex-col text items-center justify-start`} 
                 >   
                     <span className="-mt-10 pb-4 text-xl text-white" >{name}</span>
                     <div className={`grid grid-cols-${gridC} grid-rows-${gridC} gap-2 p-2 bg-gray-100 rounded-2xl p-4`}>

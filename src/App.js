@@ -30,7 +30,7 @@ export default function App(props) {
                 transition={{
                     delay:0.5
                 }}
-                className="pt-20 pb-5 text-8xl font-hand"
+                className="pt-20 pb-5 text-8xl md:text-9xl font-hand"
             >
                 Le Hub.
             </motion.h1>
@@ -44,11 +44,11 @@ export default function App(props) {
                 transition={{
                     delay:3
                 }}
-                className="pb-5 text-2xl font-hand"
+                className="pb-5 text-2xl md:text-3xl lg:text-4xl font-hand"
             >
                 Alias, un concentré de mes sites.
             </motion.h3>
-            <div className="m-auto px-4 w-full md:w-2/3 lg:1/3 py-12 lg:py-28 grid gap-2 grid-cols-4 grid-rows-6 auto-rows-min">
+            <div className="m-auto px-4 w-full md:w-1/2 lg:w-1/2 xl:w-1/3 py-12 lg:py-28 grid gap-2 grid-cols-4 grid-rows-6 auto-rows-min">
                 {disposition.map((caseData, i)=>
                     <Case key={i} i={i} data={caseData}/>
                 )}
