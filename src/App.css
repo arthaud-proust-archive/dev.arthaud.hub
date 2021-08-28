@@ -1,0 +1,58 @@
+body {
+    background: #0a0a0a;
+    height: 100vh;
+    color: white
+}
+
+
+/* .dock .group */
+.dock-closed, .appli-img-doc {
+    position: relative;
+    height: 72px;
+    width: 72px;
+}
+.dock-closed {
+    /* padding: 5px; */
+    box-sizing: content-box;
+    border-radius: 15px;
+    /* border: 1px solid #dadada; */
+    background: #383838;
+}
+
+.dock-open {
+    position: fixed;
+    border-radius: 40px;
+    background: #383838;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.appli-img-doc-min {
+    height: 20px;
+    width: 20px;
+    margin: auto;
+}
+
+.appli-img-doc-min .appli-img {
+    /* border-radius: 5px; */
+    padding: 0;
+}
+
+.appli-img {
+    display: block;
+    position: relative;
+    background: none;
+    /* background: linear-gradient(115deg,#8c66de,#a56596 36%,#e2997a); */
+    /* box-shadow: 0 0 50px 0 hsl(0deg 0% 100% / 30%); */
+    /* padding: 10px; */
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* border-radius: 20px; */
+    transition: .4s;
+}
+
+
+
+
