@@ -32,22 +32,28 @@ export default function Appli(props) {
         }
 
         async function fecthData() {
-            try {
-                if(!applis[props.id]) {
-                    throw new Error("Can't get appli data")
+            if(applis !== {} ) {
+                try {
+                    // if(!applis[props.id]) {
+                    //     throw new Error("Can't get appli data")
+                    // }
+                    if(applis[props.id]) {
+                        const manifest = await fetch(applis[props.id]+'/manifest.json');
+                        const content = await manifest.json();
+            
+                        handleContent(content)
+                    }
+
+                } catch(e) {
+                    console.error(`Unable to fetch ${applis[props.id]} manifest`)
+                    // console.error(e)
                 }
-                const manifest = await fetch(applis[props.id]+'/manifest.json');
-                const content = await manifest.json();
-    
-                handleContent(content)
-            } catch(e) {
-                console.error(e)
             }
         }
 
         fecthData();
         // eslint-disable-next-line
-    }, []);
+    }, [applis]);
 
     return (
         <a className={`flex flex-col text items-center`} {...props.minimize? {}:{href:data?data.url:'/'} }>

@@ -1,6 +1,5 @@
-import { useRef, useState, useEffect } from "react";
+import { useState } from "react";
 import Appli from "./Appli";
-import { motion, useAnimation} from "framer-motion"
 
 import CaseName from "./CaseName";
 import CaseContent from "./CaseContent";

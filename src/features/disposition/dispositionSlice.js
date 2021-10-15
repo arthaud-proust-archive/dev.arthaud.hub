@@ -4,32 +4,32 @@ export const dispositionSlice = createSlice({
     name: 'disposition',
     initialState: {
         value: [
-            ['Demo', [
-                'pendulum',
-                'collision',
-                'cb',
-                'pattern',
-            ]],
-            ['Outils', [
-                'physique',
-                'draw',
-                'share',
-                'preview',
-                'hub'
-            ]],
+            // ['Demo', [
+            //     'pendulum',
+            //     'collision',
+            //     'cb',
+            //     'pattern',
+            // ]],
+            // ['Outils', [
+            //     'physique',
+            //     'draw',
+            //     'share',
+            //     'preview',
+            //     'hub'
+            // ]],
 
-            ['Réalisations professionelles', [
-                'lubbockphotos',
-                'rachelbourgeois',
-            ]],
+            // ['Réalisations professionelles', [
+            //     'lubbockphotos',
+            //     'rachelbourgeois',
+            // ]],
 
-            ['Jeux', [
-                'snake'
-            ]],
-            'bordeauxphoto',
-            'yota',
-            'quoted',
-            'arthaud'
+            // ['Jeux', [
+            //     'snake'
+            // ]],
+            // 'bordeauxphoto',
+            // 'yota',
+            // 'quoted',
+            // 'arthaud'
         ]
     },
     reducers: {

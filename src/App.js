@@ -1,13 +1,25 @@
 import Case from "./components/Case";
 // import "./App.css";
 
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { useEffect } from "react";
 import { motion } from "framer-motion";
-// import { dispositionReducer, applisReducer } from './store';
-
+import { dispositionReducer, applisReducer } from "./store";
 
 export default function App(props) {
     const disposition = useSelector(state => state.disposition.value)
+    const dispatch = useDispatch();
+    
+    useEffect(()=>{
+        async function fetchConfig() {
+            const config = await fetch('/config.json');
+            const configParsed = await config.json();
+            dispatch(dispositionReducer.set(configParsed.disposition));
+            dispatch(applisReducer.set(configParsed.applis));
+        }
+
+        fetchConfig();
+    }, [dispatch])
 
     return (
         <div className="text-black bg-white flex flex-col items-center text-center ">
