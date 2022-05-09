@@ -18,6 +18,7 @@
         "arthaud": "https://arthaudproust.fr",
         "hub": "https://hub.arthaud.dev",
         "appointment": "https://appointment.arthaud.dev",
+        "escalade": "https://escalade-montesquieu.fr",
         "metatags": "https://metatags.arthaud.dev/",
         "lesptitesbios": "https://lesptitesbios.ga/"
     },
@@ -37,6 +38,7 @@
         ["Réalisations pro", [
             "lubbockphotos",
             "rachelbourgeois",
+            "escalade",
             "matheosavarit"
         ]],
         ["Jeux", [
