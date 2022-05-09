@@ -13,9 +13,13 @@
         "quoted": "https://quoted.arthaud.dev",
         "lubbockphotos": "https://lubbockphotos.com",
         "rachelbourgeois": "https://rachelbourgeois-psychologue.fr",
+        "matheosavarit": "https://matheosavarit.com/",
         "bordeauxphoto": "https://bordeaux-photo.fr",
         "arthaud": "https://arthaudproust.fr",
-        "hub": "https://hub.arthaud.dev"
+        "hub": "https://hub.arthaud.dev",
+        "appointment": "https://appointment.arthaud.dev",
+        "metatags": "https://metatags.arthaud.dev/",
+        "lesptitesbios": "https://lesptitesbios.ga/"
     },
     "disposition": [
         ["Demo", [
@@ -23,15 +27,18 @@
             "collision",
             "cb"
         ]],
-        ["Outils", [
+        ["Services", [
             "draw",
             "share",
             "preview",
+            "appointment",
+            "metatags",
             "hub"
         ]],
         ["Réalisations professionelles", [
             "lubbockphotos",
-            "rachelbourgeois"
+            "rachelbourgeois",
+            "matheosavarit"
         ]],
         ["Jeux", [
             "snake"

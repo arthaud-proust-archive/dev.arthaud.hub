@@ -18,7 +18,7 @@ export default function Group(props) {
             onClick={()=>setIsPopupOpen(true)}
         >   
             <CaseContent i={props.i} show={!isPopupOpen}>
-                <div className={`grid grid-cols-${gridC} grid-rows-${gridC} gap-px m-auto p-2 bg-gray-100 rounded-xl`}>
+                <div className={`grid grid-cols-${gridC} grid-rows-${gridC} gap-px m-auto p-2 bg-gray-100 rounded-xl w-full`}>
                     {
                         applis.map((appli,j)=><Appli i={props.i*5+j} key={props.j+'-'+j} minimize={true} id={appli}/>)
                     }
